@@ -111,13 +111,10 @@ p {
   border: none;
 }
 
-@media only screen and (min-width: 768px) {
-  body {
-    background-color: red;
-  }
+/** IPAD **/
+@media only screen and (min-device-width: 768px) {
+}
 
-  .avatar {
-    width: 300px;
-    height: 300px;
-  }
+/** Desktop **/
+@media only screen and (min-device-width: 1024px) {
 }
