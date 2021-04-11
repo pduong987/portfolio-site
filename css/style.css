@@ -111,8 +111,39 @@ p {
   border: none;
 }
 
-/** IPAD **/
-@media only screen and (min-device-width: 768px) {
+/** IPAD Portrait **/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .avatar {
+    height: 150px;
+    width: 150px;
+  }
+  .hero-text {
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 28px;
+  }
+  .linkset-flex a {
+    font-size: 28px;
+    width: 300px;
+    height: 50px;
+  }
+}
+
+/* IPAD Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .hero-text {
+    font-size: 22px;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+
+  .linkset-flex a {
+    font-size: 22px;
+  }
 }
 
 /** Desktop **/
