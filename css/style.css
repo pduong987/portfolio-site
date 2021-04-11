@@ -1,0 +1,67 @@
+body,
+html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.spacer {
+  height: 10px;
+}
+
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("/img/heroimg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 60px;
+}
+
+.hero-text {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+.btn {
+  background-color: #a2b0ad;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+.btn:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid 5px white;
+}
