@@ -75,15 +75,13 @@ p {
 .linkset-flex a {
   box-sizing: border-box;
   margin: 20px;
-  width: 70px;
-  height: 40px;
   border: 1px solid #333;
   text-align: center;
   text-decoration: none;
   padding-top: 10px;
   text-align: center;
-  width: 150px;
-  height: 40px;
+  min-width: 150px;
+  min-height: 40px;
   font-weight: bold;
   color: white;
   border-radius: 5px;
@@ -147,5 +145,21 @@ p {
 }
 
 /** Desktop **/
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1500px) {
+  .hero-image {
+    min-height: 50%;
+    text-align: center;
+  }
+  .avartar {
+    padding: 40px;
+  }
+  .hero-text {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 20px;
+  }
+  .linkset-flex a {
+    font-size: 20px;
+  }
 }
