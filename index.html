@@ -4,52 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <title>Home Page</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="hero-image">
-      <div class="hero-text">
-        <img class="avatar" src="/img/me.jpeg" alt="My profile photo" />
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-        <h1>Hi, My name is Vicky</h1>
-        <p>I am an aspiring Full Stack developer</p>
-        <button class="btn">Download resume</button>
-      </div>
-    </div>
-    <div class="spacer"></div>
-    <div class="linkset-flex">
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Project</a>
-      <a href="blog.html">Blog</a>
-    </div>
-
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-    <div class="icons-flex">
-      <a href="google.com">
-        <i class="fa fa-github"></i>
+    <!-- HEADER:START -->
+    <header>
+      <a
+        href="#main-menu"
+        id="main-menu-toggle"
+        class="menu-toggle"
+        aria-label="Open main menu"
+      >
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars" aria-hidden="true"></span>
       </a>
 
-      <a href="google.com">
-        <i class="fa fa-linkedin"></i>
-      </a>
+      <h1 class="logo">hamburgers</h1>
 
-      <a href="google.com">
-        <i class="fa fa-twitter"></i>
-      </a>
-    </div>
-    </div>
+      <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <a
+          href="#main-menu-toggle"
+          id="main-menu-close"
+          class="menu-close"
+          aria-label="Close main menu"
+        >
+          <span class="sr-only">Close main menu</span>
+          <span class="fa fa-close" aria-hidden="true"></span>
+        </a>
+        <ul>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a
+        href="#main-menu-toggle"
+        class="backdrop"
+        tabindex="-1"
+        aria-hidden="true"
+        hidden
+      ></a>
+    </header>
+    <!-- HEADER:END -->
   </body>
 </html>
