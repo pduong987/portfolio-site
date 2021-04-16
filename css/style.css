@@ -1,136 +1,255 @@
-html,
-body {
-  margin: 0px;
-  height: 0px;
+/*  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-/* log and hamburger menu */
-#logo {
-  position: absolute;
-  top: 40px;
-  left: 20px;
+
+html {
   font-size: 20px;
-  text-align: center;
-  padding: 5px;
-  background-color: darkslategrey;
-  color: white;
-  border-radius: 30%;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
   text-decoration: none;
 }
 
-#hamburger {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  font-size: 30px;
-}
-
-#menu {
-  display: none;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 300px;
-  height: 100%;
-  background-color: white;
-  border-left: solid 1px gray;
-}
-
-#menu a {
-  display: block;
-  padding: 40px;
-  font-size: 25px;
-  text-align: center;
-}
-
-#menu-header {
-  padding: 10px;
-  border-bottom: 1px solid gray;
-  text-align: right;
-  cursor: pointer;
-}
-
-@media only screen and (min-width: 600px) {
-  #hamburger {
-    display: none;
-  }
-
-  #menu {
-    display: block !important;
-    height: 50px;
-    width: 60%;
-    border: none;
-    text-align: right;
-    margin-top: 5px;
-    margin-right: 80px;
-    background-color: inherit;
-  }
-
-  #menu a {
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-  }
-
-  #menu-header {
-    display: none;
-  }
-}
-
-/* background cover*/
-body {
-  background-color: lightblue;
-}
-
+/* Move text to center */
 .container {
-  margin-top: 80px;
-  margin-left: 20%;
-  margin-right: 20%;
-  text-align: center;
-}
-
-/* profile image */
-.avatar {
-  margin-top: 100px;
-  border-radius: 50%;
-  width: 120px;
-}
-
-h1 {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  color: #333;
-}
-p {
-  font-size: 18px;
-}
-.btn {
-  color: #333;
-  font-size: 20px;
-  margin-top: 30px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 180px;
-  background-color: #80ffff;
-}
-
-.icons-flex {
+  min-height: 100vh;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
 }
 
-.icons-flex a {
-  display: block;
-  width: 100px;
-  margin: 20px;
-  padding: 10px 10px;
-  text-decoration: none;
+/* Nav bar */
+#header {
+  position: fixed;
+  /* so the text can reappear */
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
 }
 
-.icons-flex a i {
-  font-size: 60px;
-  color: black;
-  border: none;
+#header .header {
+  min-height: 8vh;
+  background-color: rgba(31, 30, 30, 0.24);
 }
-@media only screen and (min-width: 320px) and (max-width: 823);
+
+#header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+
+#hearder .nav-list ul {
+  list-style: none;
+  position: absolute;
+  background-color: rgb(31, 30, 30);
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow-x: hidden;
+}
+/* End Nav bar */
+
+/* Hero Section */
+
+/* background image */
+#hero {
+  background-image: url(/img/hero-bg.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+
+/* overlay setting cover hero section */
+#hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  /* photo affect appear */
+  opacity: 0.7;
+  /* reappear the Resume link */
+  z-index: -1;
+}
+
+#hero .hero {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+}
+
+#hero h1 {
+  display: block;
+  width: fit-content;
+  font-size: 2rem;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 1s ease forwards;
+  animation-delay: 2s;
+}
+
+#hero h1:nth-child(1) {
+  animation-delay: 2s;
+}
+#hero h1:nth-child(2) {
+  animation-delay: 3s;
+}
+#hero h1:nth-child(3) {
+  animation-delay: 4s;
+}
+#hero h1:nth-child(4) {
+  animation-delay: 5s;
+}
+
+/* Create animation effect */
+#hero h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: crimson;
+  animation: text_reveal_box 2s ease;
+  animation-delay: -3s;
+}
+
+#hero h1:nth-child(1) span {
+  animation-delay: 1s;
+}
+#hero h1:nth-child(2) span {
+  animation-delay: 2s;
+}
+#hero h1:nth-child(3) span {
+  animation-delay: 3s;
+}
+#hero h1:nth-child(4) span {
+  animation-delay: 4s;
+}
+
+/* Style Resume button */
+#hero .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  color: crimson;
+  /* no background color */
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 50px;
+  transition: 1 ease;
+  transition-property: background-color, color;
+}
+
+/* background turn red when hover over */
+#hero .btn:hover {
+  color: #fff;
+  background-color: crimson;
+}
+/*End Hero Section */
+
+/* About section */
+#about {
+}
+
+#about .about .about-top h1 {
+  color: #333;
+  margin-bottom: 100px;
+}
+
+/* First letter crimson color */
+#about .about-title span {
+  color: crimson;
+}
+
+#about .about-top {
+  font-size: 1.4rem;
+  margin-top: 100px;
+  line-height: 2.5rem;
+  font-weight: 300px;
+  letter-spacing: 0.05rem;
+}
+
+/* center text and symbol */
+#about .about {
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+#about .about-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+#about .about-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#about .about-item {
+  flex-basis: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: coloumn;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: lightgrey;
+  background-size: cover;
+  margin: 10px 5%;
+}
+
+.about .about-bottom .about-item .icon {
+  height: 80px;
+  width: 80px;
+}
+
+/* End About section */
+
+/* Keyframes */
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes text_reveal {
+  100% {
+    color: #fff;
+  }
+}
+/* End keyframes */
