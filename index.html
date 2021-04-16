@@ -6,52 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- HEADER:START -->
-    <header>
-      <a
-        href="#main-menu"
-        id="main-menu-toggle"
-        class="menu-toggle"
-        aria-label="Open main menu"
-      >
-        <span class="sr-only">Open main menu</span>
-        <span class="fa fa-bars" aria-hidden="true"></span>
+    <!-- logo and hambuger menu -->
+    <div><a id="logo" href="index.html">VP</a></div>
+
+    <i id="hamburger" class="fa fa-bars" onClick="toggleMenu()"></i>
+    <div id="menu">
+      <div id="menu-header">
+        <i class="fa fa-close" onClick="toggleMenu()"></i>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+    </div>
+    <!-- content -->
+    <div class="container">
+      <div class="hero-block">
+        <img src="/img/me.jpeg" class="avatar" alt="Profile-image" />
+        <h1>Hi, My name is Vicky</h1>
+        <p>I am an aspiring Full-stack developer.</p>
+        <button class="btn">Download Resume</button>
+      </div>
+    </div>
+
+    <div class="icons-flex">
+      <a href="https://github.com/pduong987">
+        <i class="fa fa-github"></i>
       </a>
 
-      <h1 class="logo">VP</h1>
+      <a href="https://www.linkedin.com/feed/">
+        <i class="fa fa-linkedin"></i>
+      </a>
 
-      <nav id="main-menu" class="main-menu" aria-label="Main menu">
-        <a
-          href="#main-menu-toggle"
-          id="main-menu-close"
-          class="menu-close"
-          aria-label="Close main menu"
-        >
-          <span class="sr-only">Close main menu</span>
-          <span class="fa fa-close" aria-hidden="true"></span>
-        </a>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blogs</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="skills.html">Skills</a></li>
-        </ul>
-      </nav>
-      <a
-        href="#main-menu-toggle"
-        class="backdrop"
-        tabindex="-1"
-        aria-hidden="true"
-        hidden
-      ></a>
-    </header>
-    <!-- HEADER:END -->
+      <a href="https://twitter.com/home?lang=en">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </div>
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("menu");
+        if (x.style.display !== "block") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -1,227 +1,136 @@
-/* Screen reader only */
-.sr-only {
+html,
+body {
+  margin: 0px;
+  height: 0px;
+}
+/* log and hamburger menu */
+#logo {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-/* Button styling */
-.menu-toggle {
-  display: inline-block;
-  padding: 0.75em 15px;
-  line-height: 1em;
-  font-size: 1em;
-  color: #333;
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  color: #c00;
-}
-
-/*
- Default styles + Mobile first
- Offscreen menu style
-*/
-.main-menu {
-  position: absolute;
-  display: none;
-  left: -200px;
-  top: 0;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: visible;
-  transition: left 0.3s ease, box-shadow 0.3s ease;
-  z-index: 999;
-}
-
-.main-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 2.5em 0 0;
-  /* Hide shadow w/ -8px while 'closed' */
-  -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
-  box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
-  min-height: 100%;
-  width: 200px;
-  background: #1a1a1a;
-}
-
-.main-menu a {
-  display: block;
-  padding: 0.75em 15px;
-  line-height: 1em;
-  font-size: 1em;
-  color: #fff;
+  top: 40px;
+  left: 20px;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  background-color: darkslategrey;
+  color: white;
+  border-radius: 30%;
   text-decoration: none;
-  border-bottom: 1px solid #383838;
 }
 
-.main-menu li:first-child a {
-  border-top: 1px solid #383838;
-}
-
-.main-menu a:hover,
-.main-menu a:focus {
-  background: #333;
-  text-decoration: underline;
-}
-
-.main-menu .menu-close {
+#hamburger {
   position: absolute;
-  right: 0;
-  top: 0;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 30px;
 }
 
-/*
- On small devices, allow it to toggle...
-*/
-/*
- :target for non-JavaScript
- [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
-*/
-.main-menu:target,
-.main-menu[aria-expanded="true"] {
-  display: block;
-  left: 0;
-  outline: none;
-  -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
-  box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
-}
-
-.main-menu:target .menu-close,
-.main-menu[aria-expanded="true"] .menu-close {
-  z-index: 1001;
-}
-
-.main-menu:target ul,
-.main-menu[aria-expanded="true"] ul {
-  position: relative;
-  z-index: 1000;
-}
-
-/* 
- We could us `.main-menu:target:after`, but
- it wouldn't be clickable.
-*/
-.main-menu:target + .backdrop,
-.main-menu[aria-expanded="true"] + .backdrop {
+#menu {
+  display: none;
   position: absolute;
-  display: block;
-  left: 0;
-  top: 0;
-  width: 100%;
+  top: 0px;
+  right: 0px;
+  width: 300px;
   height: 100%;
-  z-index: 998;
-  background: #000;
-  background: rgba(0, 0, 0, 0.85);
-  cursor: default;
+  background-color: white;
+  border-left: solid 1px gray;
 }
 
-@supports (position: fixed) {
-  .main-menu,
-  .main-menu:target + .backdrop,
-  .main-menu[aria-expanded="true"] + .backdrop {
-    position: fixed;
-  }
+#menu a {
+  display: block;
+  padding: 40px;
+  font-size: 25px;
+  text-align: center;
 }
 
-/*
- Larger screen styling
- Horizontal menu
-*/
-@media (min-width: 768px) {
-  .menu-toggle,
-  .main-menu .menu-close {
+#menu-header {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  text-align: right;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  #hamburger {
     display: none;
   }
 
-  /* Undo positioning of off-canvas menu */
-  .main-menu {
-    position: relative;
-    left: auto;
-    top: auto;
-    height: auto;
-    display: block;
+  #menu {
+    display: block !important;
+    height: 50px;
+    width: 60%;
+    border: none;
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 80px;
+    background-color: inherit;
   }
 
-  .main-menu ul {
-    display: flex;
-
-    /* Undo off-canvas styling */
-    padding: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    height: auto;
-    width: auto;
-    background: none;
+  #menu a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
   }
 
-  .main-menu a {
-    color: #06c;
-    border: 0 !important; /* Remove borders from off-canvas styling */
-  }
-
-  .main-menu a:hover,
-  .main-menu a:focus {
-    background: none; /* Remove background from off-canvas styling */
-    color: #c00;
+  #menu-header {
+    display: none;
   }
 }
 
-/*
- Demo purposes only
-*/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-html,
+/* background cover*/
 body {
-  padding: 0px;
-  margin: 0px;
+  background-color: lightblue;
 }
 
-header {
-  padding: 10px;
-  display: flex;
-  align-items: baseline;
-  background-color: gray;
-  justify-content: middle;
-}
-
-article {
-  padding: 30px;
-  width: 55em;
-  font-size: 16px;
-  line-height: 1.5em;
-}
-
-article h2 {
-  font-weight: 500;
-  font-size: 28px;
-}
-
-.logo {
-  margin: 0 30px 0 10px;
-  padding-top: 15px;
-  font-size: 20px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: cornflowerblue;
-  font-weight: bold;
+.container {
+  margin-top: 80px;
+  margin-left: 20%;
+  margin-right: 20%;
   text-align: center;
-  vertical-align: middle;
+}
+
+/* profile image */
+.avatar {
+  margin-top: 100px;
+  border-radius: 50%;
+  width: 120px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #333;
+}
+p {
+  font-size: 18px;
+}
+.btn {
+  color: #333;
+  font-size: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 180px;
+  background-color: #80ffff;
+}
+
+.icons-flex {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
+
+.icons-flex a {
+  display: block;
+  width: 100px;
+  margin: 20px;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+.icons-flex a i {
+  font-size: 60px;
+  color: black;
+  border: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 823);
