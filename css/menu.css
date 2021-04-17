@@ -1,10 +1,49 @@
+#header {
+  /* Make it on top of the content */
+  z-index: 1001;
+}
+
+.logo-link {
+  color: #333;
+  cursor: pointer;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /*  Set the logo square */
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* logo icon */
+
+.logo > div {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 3px;
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 .menu-wrap {
   /* always on top of the content */
   position: fixed;
   top: 0;
   left: 0;
-  /* Make it on top of the content */
-  z-index: 1000;
 }
 
 /* The check-box */
@@ -144,4 +183,8 @@
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li > a:hover {
+  color: crimson;
 }
