@@ -1,0 +1,22 @@
+.footer {
+  z-index: 2;
+  height: 10vh;
+  background-color: inherit;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon {
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  font-size: 50px;
+  margin: 0px 30px 0px 30px;
+}
+
+.footer-icon a {
+  color: white;
+}
