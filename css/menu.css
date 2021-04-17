@@ -9,9 +9,9 @@
 
 /* The check-box */
 .menu-wrap .toggler {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 2;
   cursor: pointer;
   width: 50px;
@@ -21,9 +21,9 @@
 }
 
 .menu-wrap .hamburger {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 1;
   /*  Set the hamburger square */
   width: 60px;
@@ -109,6 +109,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: black;
 }
 
 .menu-wrap .menu > div {
