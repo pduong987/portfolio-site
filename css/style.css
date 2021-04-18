@@ -353,6 +353,8 @@ p {
   }
 }
 
+/* End About page */
+
 /* Blog page */
 
 .blog-entry {
@@ -397,4 +399,75 @@ p {
   .blog-content {
     width: 100%;
   }
+}
+
+/* End Blog page */
+
+/* Project page */
+
+.cards {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  color: #333;
+  background-color: white;
+  padding: 50px;
+  margin: 10px;
+  display: inline-block;
+  width: 400px;
+}
+
+.card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.card h1 {
+  font-size: 25px;
+}
+
+.card p {
+  min-height: 320px;
+}
+
+.card a {
+  text-transform: uppercase;
+  font-size: 20px;
+  display: block;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-funky {
+  background: #ff416c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
 }
