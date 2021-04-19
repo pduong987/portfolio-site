@@ -1,4 +1,7 @@
 /* About page */
+body {
+  background-color: #333;
+}
 
 .content {
   font-size: 18px;

@@ -1,5 +1,9 @@
 /* Project page */
 
+body {
+  background-color: #333;
+}
+
 .cards {
   display: flex;
   text-align: center;
