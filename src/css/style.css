@@ -267,7 +267,6 @@ a {
 
 /* Screen adjust */
 
-
 /* Ipad */
 @media only screen and (min-width: 700px) {
   #hero {
@@ -285,14 +284,13 @@ a {
 @media only screen and (min-width: 300px) {
   #hero h1 {
     font-size: 15px;
-    
   }
   #hero {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  #hero .hero  {
+  #hero .hero {
     padding: 0;
   }
 }
@@ -300,7 +298,6 @@ a {
 /* laptop */
 @media only screen and (min-width: 1000px) {
   #hero h1 {
-font-size: 40px;
-  }
+    font-size: 40px;
   }
 }
