@@ -97,7 +97,7 @@ a {
   width: 100%;
   background-color: black;
   /* photo affect appear */
-  opacity: 0.7;
+  opacity: 0.2;
   /* reappear the Resume link */
   z-index: -1;
 }
