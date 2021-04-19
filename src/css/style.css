@@ -162,22 +162,20 @@ a {
 #hero .btn {
   display: inline-block;
   padding: 10px 30px;
-  color: crimson;
-  /* no background color */
-  background-color: transparent;
-  border: 2px solid crimson;
+  color: white;
+  background-color: crimson;
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-top: 50px;
-  transition: 1 ease;
-  transition-property: background-color, color;
+  transition: padding 2s;
 }
 
 /* background turn red when hover over */
 #hero .btn:hover {
   color: #fff;
   background-color: crimson;
+  padding: 10px 50px;
 }
 /*End Hero Section */
 

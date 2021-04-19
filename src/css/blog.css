@@ -1,12 +1,16 @@
 /* Blog page */
 
+.blog-container {
+  justify-content: center;
+}
+
 .blog-entry {
   width: 60%;
   text-align: left;
   margin: auto;
   color: #333;
   background-color: #fff;
-  justify-content: left;
+  /* justify-content: left; */
 }
 
 .pill-style {
@@ -16,53 +20,34 @@
 }
 
 .blog-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   width: 200px;
   height: 200px;
   /* vertical-align: top; */
+  margin-top: 6px;
   cursor: pointer;
 }
 
 .blog-img img {
-  width: 20%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
 }
 
 .blog-content {
-  margin-top: 15px;
+  display: inline-block;
+  margin-top: 5px;
   font-size: 18px;
   text-align: center;
-  /* display: inline-block; */
-  width: 70%;
+  width: 73%;
   vertical-align: top;
 }
 
-@media only screen and (max-width: 600px) {
-  .blog-img {
-    width: 100%;
-  }
-  .blog-content {
-    width: 100%;
-  }
-}
-
-/* Ipad */
-@media only screen and (min-width: 700px) {
-  .blog-img {
-    width: 100%;
-  }
-
-  .blog-content {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 300px) {
+@media (max-width: 800px) {
   .blog-entry {
     width: 100%;
   }
+  .blog-img {
+    align-self: center;
+  }
 }
-
 /* End Blog page */
