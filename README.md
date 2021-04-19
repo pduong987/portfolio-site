@@ -15,7 +15,7 @@
             - Blog page: 5 example blogs added but no content yet. 
 
         My porfolio was made for the learning purpose and understanding the concept of HTML and CSS. I had so much fun explore different styling which Css provide and it is an endless list. I think my porfolio could be better overtime but for the moment this porfolio was a hard working provement and sucessful deploy.
-  
+
 
   * Functionality / features
   
@@ -25,6 +25,15 @@
             - Blog page: appears with 5 blogs, up to date with hover effect on button and img. But there is no real link to them. 
   
   * Sitemap
+
   * Screenshots
+
+         
+
   * Target audience
+
   * Tech stack (e.g. html, css, deployment platform, etc)
+
+       
+
+<img src="/Users/duongpham/git/portfolio-site/docs/Screen Shot 2021-04-19 at 2.03.56 pm.png" alt="./" style="zoom: 33%;" />
