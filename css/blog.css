@@ -1,0 +1,68 @@
+/* Blog page */
+
+.blog-entry {
+  width: 60%;
+  text-align: left;
+  margin: auto;
+  color: #333;
+  background-color: #fff;
+  justify-content: left;
+}
+
+.pill-style {
+  font-size: 15px;
+  text-align: right;
+  margin-top: 35px;
+}
+
+.blog-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  /* vertical-align: top; */
+  cursor: pointer;
+}
+
+.blog-img img {
+  width: 30%;
+  height: 60%;
+}
+
+.blog-content {
+  margin-top: 15px;
+  font-size: 18px;
+  text-align: center;
+  /* display: inline-block; */
+  width: 70%;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-img {
+    width: 100%;
+  }
+  .blog-content {
+    width: 100%;
+  }
+}
+
+/* Ipad */
+@media only screen and (min-width: 700px) {
+  .blog-img {
+    width: 100%;
+  }
+
+  .blog-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  .blog-entry {
+    width: 100%;
+  }
+}
+
+/* End Blog page */
