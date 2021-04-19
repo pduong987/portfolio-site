@@ -281,7 +281,7 @@ a {
 /* IPhone */
 @media only screen and (min-width: 300px) {
   #hero h1 {
-    font-size: 15px;
+    font-size: 30px;
   }
   #hero {
     display: flex;
