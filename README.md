@@ -26,53 +26,62 @@
   
   * Sitemap (/)
 
+       ​																																							
 
-         * Home
-         * About
-         * Projects
-         * Blog
+       ![](./docs/Site-map.png)
+
+       
+
+
+        
 
   * Screenshots
 
        
 
-       <img src="/Users/duongpham/git/portfolio-site/docs/home-page.png" style="zoom: 50%;" />
+       <img src="./docs/home-page.png" style="zoom: 50%;" />
 
-       ​																								Home page
-
-       
+       ​																	Home page
 
        
 
-       <img src="/Users/duongpham/git/portfolio-site/docs/menu-bar.png" style="zoom: 25%;" />
+       
 
-         																								Menu bar
+       <img src="./docs/menu-bar.png" style="zoom: 25%;" />
 
-
-
-
+         																	Menu bar
 
 
 
-<img src="/Users/duongpham/git/portfolio-site/docs/about-page1.png" style="zoom:25%;" />
+
+
+
+
+<img src="./docs/about-page1.png" style="zoom:25%;" />
 
 ​																									About page head
 
 
 
-<img src="/Users/duongpham/git/portfolio-site/docs/about-page2.png" style="zoom:25%;" />
+<img src="./docs/about-page2.png" style="zoom:25%;" />.
 
 ​																								About page bottom
 
 
 
+<img src="./docs/project-page1.png" style="zoom: 25%;" />
+
+​																								Project page top
 
 
-<img src="/Users/duongpham/git/portfolio-site/docs/blog-page1.png" style="zoom:25%;" />
-
-​																								Blog page top
 
 
+
+
+
+<img src="/Users/duongpham/git/DuongPham_T1A2/docs/project-page2.png" style="zoom:25%;" />
+
+​	                                  Project page bottom
 
 
   * Target audience:
@@ -88,5 +97,6 @@
          * html
          * Css
 
-       
+
+​       
 
