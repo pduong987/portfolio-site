@@ -1,0 +1,239 @@
+commit e8594eb6dd95fae9fbe7315f5e4e24fb0ddb6217
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Tue Apr 20 23:30:23 2021 +1000
+
+    SRI test
+
+commit d4dfd31f3cc066f4ec14dbbc92af88aa29cccc73
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Tue Apr 20 22:48:41 2021 +1000
+
+    Add sitemap to Readme file and ppt
+
+commit baad8aa177684ad45fb6a097d7424eac5530c66c
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Tue Apr 20 15:19:08 2021 +1000
+
+    Add Powerpoint to ppt
+
+commit b3c4a47f61f08222db84276494104c4b750bf122
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Tue Apr 20 09:57:23 2021 +1000
+
+    Fixed Blog
+
+commit 580add1e213c49a87f60f2e64c20ee5d47c4d107
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Tue Apr 20 00:35:12 2021 +1000
+
+    Fixed bad move
+
+commit c3805485be0919d9482c2a7b43fd65cd408e9790
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Tue Apr 20 00:31:45 2021 +1000
+
+    Moved files
+
+commit 513bf1690e8aee7e5f87d0b56fa47f218252c8da
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Tue Apr 20 00:14:09 2021 +1000
+
+    Readme file , wireframe updated
+
+commit d787615d4e6ac8a2273c680efc52b33fca8255d8
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 23:37:08 2021 +1000
+
+    Change @media h1 font size
+
+commit 1fc1c13bf1a9fe32597d853505a3d2217c29112d
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 23:32:15 2021 +1000
+
+    Change background color
+
+commit 458f2cfeb637d2e4a391fc61205cfc6394b805f7
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 21:40:25 2021 +1000
+
+    Add blog changes
+
+commit 6c3f8d98a5fa39efcbc1a46e58085a0f7771d6ae
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 20:41:12 2021 +1000
+
+    Absolute path test
+
+commit dac66f3e4264bd2f0de063ca30cf61acc5857387
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 20:39:26 2021 +1000
+
+    Absolute path test
+
+commit 432d6dc98d5e249215ca59926d5186b46810fc4c
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 20:37:50 2021 +1000
+
+    Using relative path
+
+commit d94e0438016b4308d475766b4b6058313a69c4ae
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 17:09:44 2021 +1000
+
+    Right solution to deploy,add src to img link
+
+commit 898ee38d95137e89b0935056e32482b30b262af2
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 17:04:23 2021 +1000
+
+    Take src out of img link
+
+commit ef40f8601f964d1a187e0b27fa91aa0750a76372
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 16:55:04 2021 +1000
+
+    Take src out of link
+
+commit 370686a47e7b5995ef3981281b602a46e67c728b
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 16:48:23 2021 +1000
+
+    Change all img to src folder
+
+commit 59e2670eca859e7fb22cc0b23acfe59a2ce42b1f
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 16:10:30 2021 +1000
+
+    change opacity overlay color
+
+commit 6f0e3e84d1bd02b51cce2e3a5d49985b8d558c8d
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 15:05:07 2021 +1000
+
+     Add docs, src folder
+
+commit e24545a90240456f9189e777e3d12348413eb568
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 13:54:53 2021 +1000
+
+    change width in blog page
+
+commit 8ae74d10b90982ae33b639da4299e600c8ca3788
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 13:36:13 2021 +1000
+
+    Add changes on Media query to all pages
+
+commit 93028e551a1868f01ef3f44688c5f4faf7131de5
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 01:17:56 2021 +1000
+
+    Add contact detail in Ping me
+
+commit 451eaa21e22659bcb2fb41d0fa27200a29864917
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Mon Apr 19 00:14:42 2021 +1000
+
+    Project page
+
+commit 79fb4c0556b999ddc4cf412fc027d1b29825a796
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Sun Apr 18 23:13:03 2021 +1000
+
+    Blog page and update About page
+
+commit 24256f84de4d24c88053d4ec0cbfa07c2940daba
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Sun Apr 18 21:52:53 2021 +1000
+
+    About page
+
+commit 4bbf710d0c09b3873704a5ef56e3c9ea82b8fe21
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Sat Apr 17 22:25:55 2021 +1000
+
+    Add footer
+
+commit 58fb6f845f5a80f1ef1e1d2c8c167c285e08f7e0
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Sat Apr 17 10:36:18 2021 +1000
+
+    Logo and menu bar align
+
+commit 827d6a8fce866a59b8aa671ef45b137c1edf539f
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Sat Apr 17 10:07:36 2021 +1000
+
+    Change Menu bar to the right hand-side
+
+commit 98de925bbde0ea064d34bf5241172e13f4206e6c
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Sat Apr 17 09:51:45 2021 +1000
+
+    Experiment with different design
+
+commit d921636f1c2abbc7f24dd3e014408776c9fbce6b
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Sat Apr 17 09:47:35 2021 +1000
+
+    Experimental changes
+
+commit fa497a0ad6c223285ccc42fa4895abc51924b7df
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Tue Apr 13 12:56:38 2021 +1000
+
+    Add nav bar
+
+commit cdcdd6c062afa78a2ad18ae21298164910d65a90
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Tue Apr 13 12:24:46 2021 +1000
+
+    Experiment humbuger menu
+
+commit 393666095f84e6bddb28f599135301b7d4376820
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Tue Apr 13 08:11:06 2021 +1000
+
+    Add laptop responsive
+
+commit 69d3b942065bfc1e395e5279a9fe6e85bfebdbfc
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Sun Apr 11 21:15:30 2021 +1000
+
+    Add media Iphone and Ipad selector
+
+commit 228f9a7900375b5bebce153ed33a3d5ff768b76b
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Sun Apr 11 20:58:56 2021 +1000
+
+    Iphone resposive
+
+commit 78b9b06861ecbcbe19090d3bb0c95c6ae848b833
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Sun Apr 11 20:46:10 2021 +1000
+
+    Add page links and social links
+
+commit 6c2b20a3cdbec0c18cc19c02f55267434bf6b9a8
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Sun Apr 11 17:14:01 2021 +1000
+
+     Add hero section
+
+commit 38b82baf526fa12fb6357936fc9b1d77d7535cb4
+Author: Duong Pham <ptduong987@gmail.com>
+Date:   Sun Apr 11 12:49:38 2021 +1000
+
+    Created main files
+
+commit 7a51fa8ac1549500c303ba5789f6943f9a797b72
+Author: Nandini Nayak <nandini.r.nayak@gmail.com>
+Date:   Wed Apr 7 08:38:41 2021 +1000
+
+    initial commit
+
+commit c022eb3d74f1d13a747d7ec95ecf4fb53e52d72b
+Author: NandiniNayak <nandini.r.nayak@gmail.com>
+Date:   Wed Apr 7 08:35:15 2021 +1000
+
+    Initial commit
